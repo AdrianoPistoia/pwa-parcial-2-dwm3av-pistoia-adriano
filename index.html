@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" id="touchElement">
+<head>
+    <meta charset="UTF-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="2048 Game">
+    <meta name="apple-mobile-web-app-title" content="2048 Game">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>2048.JS clone by Adriano Pistoia</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>2048.JS<span> clone</span></h1>
+    <div id="score" class="score">
+        <h2 id="currScore">Current Score:<span></span></h2>
+        <h2 id="highScore">High Score:<span></span></h2>
+    </div>
+    <div id="Tutorial" class="d-flex justify-content-around">
+        <img src="icons/icons8-info.svg" alt="info">
+
+        <div id="PC" class="d-none align-items-center">
+            <p>Para mover los bloques, presiona W, A, S, D</p>
+            <p> y se moveran a su respectiva dirección</p>
+        </div>
+        <div id="ELSE" class="d-none align-items-center">
+            <p>Para mover los bloques, deslizá el dedo hacia algun lado</p>
+            <p>y los bloques se moveran a su respectiva dirección</p>
+        </div>
+    </div>
+    <div id="Ranking" class="d-flex flex-column justify-content-around align-content-center">
+        <img src="/icons/icons8-leaderboard-26.svg" alt="leaderBoards">
+        <div class="d-none flex-column justify-content-around align-content-center align-items-center flex-wrap">
+            <p class="d-flex flex-row justify-content-around">| Name |<span>| Score |</span></p>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
